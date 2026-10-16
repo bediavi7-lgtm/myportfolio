@@ -677,7 +677,7 @@
             <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#gloss)"/>
             <rect x="7" y="7" width="106" height="106" rx="25" fill="none" stroke="rgba(255,255,255,.7)" stroke-width="2"/>
           </svg></span><span class="pop-tip">Shopify</span></button>
-      <button type="button" class="pop-ico" data-tool="notion" style="--x:8%;--y:34%;--rot:6deg;--i:4" aria-label="Notion"><span class="pop-in" style="animation-delay:-2.4s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="Notion">
+      <button type="button" class="pop-ico" data-tool="notion" style="--x:16%;--y:32%;--rot:6deg;--i:4" aria-label="Notion"><span class="pop-in" style="animation-delay:-2.4s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="Notion">
             <rect x="6" y="15" width="108" height="108" rx="26" fill="#b9b9b3"/>
             <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#g-notion)"/>
             <rect x="26" y="24" width="68" height="72" rx="8" fill="#fff" stroke="#111" stroke-width="5"/>
@@ -685,7 +685,7 @@
             <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#gloss)"/>
             <rect x="7" y="7" width="106" height="106" rx="25" fill="none" stroke="rgba(255,255,255,.8)" stroke-width="2"/>
           </svg></span><span class="pop-tip">Notion</span></button>
-      <button type="button" class="pop-ico" data-tool="instagram" style="--x:27%;--y:30%;--rot:-6deg;--i:5" aria-label="Instagram"><span class="pop-in" style="animation-delay:-3.0s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="Instagram">
+      <button type="button" class="pop-ico" data-tool="instagram" style="--x:50%;--y:25%;--rot:-6deg;--i:5" aria-label="Instagram"><span class="pop-in" style="animation-delay:-3.0s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="Instagram">
             <rect x="6" y="15" width="108" height="108" rx="26" fill="#7a1d5c"/>
             <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#g-ig)"/>
             <rect x="28" y="28" width="64" height="64" rx="19" fill="none" stroke="#fff" stroke-width="7"/>
@@ -694,15 +694,7 @@
             <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#gloss)"/>
             <rect x="7" y="7" width="106" height="106" rx="25" fill="none" stroke="rgba(255,255,255,.4)" stroke-width="2"/>
           </svg></span><span class="pop-tip">Instagram</span></button>
-      <button type="button" class="pop-ico" data-tool="similarweb" style="--x:73%;--y:30%;--rot:7deg;--i:6" aria-label="SimilarWeb"><span class="pop-in" style="animation-delay:-3.6s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="SimilarWeb">
-            <rect x="6" y="15" width="108" height="108" rx="26" fill="#020c18"/>
-            <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#g-sw)"/>
-            <path d="M82 38C72 24 38 26 38 46c0 20 44 12 44 32 0 20-36 22-46 6" fill="none" stroke="#fff" stroke-width="12" stroke-linecap="round" transform="translate(2 0)"/>
-            <circle cx="88" cy="88" r="7" fill="#ff7a45"/>
-            <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#gloss)"/>
-            <rect x="7" y="7" width="106" height="106" rx="25" fill="none" stroke="rgba(255,255,255,.35)" stroke-width="2"/>
-          </svg></span><span class="pop-tip">SimilarWeb</span></button>
-      <button type="button" class="pop-ico" data-tool="canva" style="--x:92%;--y:34%;--rot:-5deg;--i:7" aria-label="Canva"><span class="pop-in" style="animation-delay:-4.2s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="Canva">
+      <button type="button" class="pop-ico" data-tool="canva" style="--x:84%;--y:32%;--rot:-5deg;--i:6" aria-label="Canva"><span class="pop-in" style="animation-delay:-4.2s"><svg class="ico" viewBox="0 0 120 128" role="img" aria-label="Canva">
             <rect x="6" y="15" width="108" height="108" rx="26" fill="#3b2aa6"/>
             <rect x="6" y="6" width="108" height="108" rx="26" fill="url(#g-canva)"/>
             <text x="60" y="71" font-size="34" font-style="italic" font-weight="700" text-anchor="middle" fill="#fff" font-family="'Segoe Script','Brush Script MT','Lucida Handwriting',cursive">Canva</text>
@@ -721,7 +713,6 @@
         <li data-tool="shopify"><span class="font-display">Shopify</span><small class="mono">D2C store &amp; launches</small></li>
         <li data-tool="notion"><span class="font-display">Notion</span><small class="mono">Content hub &amp; planning</small></li>
         <li data-tool="instagram"><span class="font-display">Instagram</span><small class="mono">Where the story lands</small></li>
-        <li data-tool="similarweb"><span class="font-display">SimilarWeb</span><small class="mono">Competitor &amp; traffic intel</small></li>
         <li data-tool="canva"><span class="font-display">Canva</span><small class="mono">Decks · carousels · creatives</small></li>
         </ol>
       </div>
@@ -911,7 +902,7 @@
 
   /* ═════════ 1 · PRE-LOADER ═════════ */
   const loader = $('#loader'), stage = $('#wordStage');
-  const WORDS = ['campaigns', 'influencer', 'calendar', 'pillar'];
+  const WORDS = ['campaigns', 'influencer', 'calendar'];
   const ROT = [-5, 4, -3, 6], START = 600, STEP = 820, BURST_AT = START + WORDS.length * STEP, TOTAL = BURST_AT + 1700;
   let finished = false; const timers = [];
   const later = (fn, ms) => timers.push(setTimeout(fn, ms));
